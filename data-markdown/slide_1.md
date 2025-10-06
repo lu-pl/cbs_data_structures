@@ -1,64 +1,68 @@
-## Test
-- Point 1
-- Point 2
-- Point 3
+
+**Computational Background Skills for DH** <!-- .element: class="font-size-70" style="margin-bottom: 1.5em" -->
+
+**Data Structures** <!-- .element: style="font-size:75px; margin-bottom:1.5em;" -->
+
+Lukas Plank <!-- .element style="margin: 1em 0 0.5em;" -->
+
+<div style="font-size:30px">
+Austrian Centre for Digital Humanities<br>
+Austrian Academy of Sciences
+</div>
 
 +++
 
-## Goals
-- Point 1 <!-- .element: class="fragment" -->
-- Point 2 <!-- .element: class="fragment" -->
-- Point 3 <!-- .element: class="fragment" -->
+**Data Structures?** <!-- .element: class="font-size-50" style="margin-bottom: 1.5em" -->
+
+Data structures are a means of<br/>
+<span class="fragment highlight-blue">organizing, storing</span>,
+<span class="fragment highlight-red">managing and manipulating</span><br/>
+	information.
+<!-- .element: class="fragment" -->
 
 +++
 
-#### Code 1
-```python
-class ttl:
-    def __init__(
-        self,
-        uri: _TripleSubject,
-        *predicate_object_pairs: tuple[
-            URIRef,
-            _TripleObject
-            | list
-            | Iterator
-            | Self
-            | str
-            | tuple[_TripleObject | str, ...],
-        ],
-        graph: Graph | None = None,
-    ) -> None:
-        self.uri = uri
-        self.predicate_object_pairs = predicate_object_pairs
-        self.graph = Graph() if graph is None else deepcopy(graph)
-        self._iter = iter(self)
-		# ...
-```
+**<span style="color:blue;">Representation</span>**
+  - How information is modeled, arranged, and stored <!-- .element: class="fragment" -->
+  - Focus on structure, shapes and relationships in the data <!-- .element: class="fragment" -->
+  - Examples: arrays, trees, graphs <!-- .element: class="fragment" -->
 
 +++
 
-#### Code 2
-```python
-	# class ttl
-    def __iter__(self) -> Iterator[_Triple]:
-        """Generate an iterator of tuple-based triple representations."""
-        for pred, obj in self.predicate_object_pairs:
-            match obj:
-                case ttl():
-                    yield (self.uri, pred, obj.uri)
-                    yield from obj
-                case list() | Iterator():
-                    _b = BNode()
-                    yield (self.uri, pred, _b)
-                    yield from ttl(_b, *obj)
-                case tuple():
-                    _object_list = zip(repeat(pred), obj)
-                    yield from ttl(self.uri, *_object_list)
-                case obj if isinstance(obj, _TripleObject):
-                    yield (self.uri, pred, obj)
-                case str():
-                    yield (self.uri, pred, Literal(obj))
-                case _:
-                    raise Exception("This should never happen.")
-```
+**<span style="color:red;">Operations</span>**
+  - How information is accessed, modified, and processed <!-- .element: class="fragment" -->
+  - Focus on algorithms, efficiency and interfaces when working with data <!-- .element: class="fragment" -->
+  - Examples: searching, sorting, inserting, deleting, iterating, traversing <!-- .element: class="fragment" -->
+
++++
+
+Data structures are a way of <br><span style="color:blue;">representing</span> information. <br><br>Algorithms define instructions for <br><span style="color:red;">operating</span> on that information.
+
++++
+
+**Session Outline** <!-- .element: class="font-size-50" style="margin-bottom: 1.5em" -->
+<section>
+  <div style="display:flex; gap:4em;">
+    <div class="fragment" style="text-align:center;">
+      <p>Arrays</p>
+      <img src="./data-markdown/pics/array_icon.png" width="200">
+    </div>
+    <div class="fragment" style="text-align:center;">
+      <p>Trees</p>
+      <img src="./data-markdown/pics/tree_icon.png" width="200">
+    </div>
+    <div class="fragment" style="text-align:center;">
+      <p>Graphs</p>
+      <img src="./data-markdown/pics/graph_icon.png" width="200">
+    </div>
+  </div>
+</section>
+
++++
+
+**Links** <!-- .element: class="font-size-50" style="margin-bottom: 1.5em" -->
+
+&nbsp;Slides are at [tinyurl.com/cbs20251008-slides](https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=34d32522f47e4a67286f9894fc81c863).
+<br/>
+Please got to [tinyurl.com/cbs20251008-colab](https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=34d32522f47e4a67286f9894fc81c863).
+
