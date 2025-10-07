@@ -100,8 +100,15 @@ print(association_array)
 
 **Practical** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
 
-<p style="font-size:35px">Take a quick moment to think through the logic for retrieving a value by key in <em>parallel arrays</em> versus in an <em>associative array</em>.</p>
-<p style="font-size:35px">How would each approach work?</p>
+<ul>
+  <li class="fragment" style="font-size:35px">Go to <a href="https://colab.research.google.com/drive/15BVAPh2cuGuV0_whxOIQr09KiUOfca7p#scrollTo=OmEKDQ9l9D7l">Associative Arrays</a> in the colab sheet and tinker with parallel/associative arrays.
+  <br>How to access a value by index in a nested array?</li>
+  <li class="fragment">
+	<p style="font-size:35px">Take a quick moment to think through the logic for retrieving a value by key in <em>parallel arrays</em> versus in an <em>associative array</em>.</p>
+	<p style="font-size:35px">How would each approach work?</p>
+  </li>
+</ul>
+
 
 +++
 

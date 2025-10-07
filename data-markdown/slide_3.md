@@ -136,8 +136,8 @@ value   ::= string | number |
 **XML** <!-- .element: style="font-size:70px; margin-bottom:1.5em;" -->
 <ul class="element" style="font-size:50px; margin-bottom:1.5em;">
   <li class="fragment"><span class="fragment highlight-blue">Extensible</span> <span class="fragment highlight-red">Markup Language</span></li>
-  <li class="fragment">A <span style="color: red">markup language</span> is a way of encoding text so that, besides the plain text itself, there’s also extra information (“markup”) about the structure, meaning, or presentation of the text</li>
-  <li class="fragment"><span style="color: blue">Extensible</span> means that the language can be extended to suit specific needs and domains</li>
+  <li class="fragment" style="font-size:90%">A <span style="color: red">markup language</span> is a way of encoding text so that, besides the plain text itself, there’s also extra information (“markup”) about the structure, meaning, or presentation of the text</li>
+  <li class="fragment" style="font-size:90%"><span style="color: blue">Extensible</span> means that the language can be extended to suit specific needs and domains</li>
 </ul>
 
 
@@ -148,6 +148,8 @@ value   ::= string | number |
 +++
 
 **XML Example: BST (1)** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
+
+<p style="font-size: 70%">See <a href="https://colab.research.google.com/drive/15BVAPh2cuGuV0_whxOIQr09KiUOfca7p#scrollTo=kH-xgzBn9mvT">XML</a> in the Colab sheet for an example of how to process XML with Python.</p>
 
 <pre><code class="xml">
 <node>

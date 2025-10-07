@@ -33,6 +33,10 @@
 
 +++
 
+<img src="./data-markdown/pics/tree_not_a_tree.png">
+
++++
+
 **RDF Graphs / Knowledge Graphs** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
 
 <ul style="font-size: 0.8em;">
@@ -49,7 +53,13 @@
 
 +++
 
-**Example RDF Graph** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
+**Example RDF Graph (1)** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
+
+<img src="./data-markdown/pics/rdf_graph_beatles.png">
+
++++
+
+**Example RDF Graph (2)** <!-- .element: style="font-size:50px; margin-bottom:0.0em;" -->
 
 <img src="./data-markdown/pics/rdf_graph_example.png" height="550">
 
