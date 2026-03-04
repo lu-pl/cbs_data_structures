@@ -129,7 +129,7 @@ value   ::= string | number |
 <p style=>Have a look at the PFP API and retrieve a <br>JSON response from it.<p>
 
 - [PFP Project](https://www.oeaw.ac.at/acdh/research/dh-research-infrastructure/activities/modelling-humanities-data/pfp-prosopographical-research-platform-austria)
-- [PFP API Docs](https://pfp-api.acdh-ch-dev.oeaw.ac.at/docs)
+- [PFP API Docs](https://pfp-api.acdh-dev.oeaw.ac.at/docs)
 
 +++
 
