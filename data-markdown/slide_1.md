@@ -62,7 +62,7 @@ Data structures are a way of <br><span style="color:blue;">representing</span> i
 
 **Links** <!-- .element: class="font-size-50" style="margin-bottom: 1.5em" -->
 
-&nbsp;[Slides](https://lu-pl.github.io/cbs_data_structures/)
+&nbsp;[https://tinyurl.com/cbs-ds-slides](https://tinyurl.com/cbs-ds-slides)
 <br/>
-[Colab](https://tinyurl.com/cbs-datastructures-colab)
+[https://tinyurl.com/cbs-ds-colab](https://tinyurl.com/cbs-ds-colab)
 
