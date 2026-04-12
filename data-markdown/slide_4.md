@@ -37,7 +37,30 @@
 
 +++
 
-**RDF Graphs / Knowledge Graphs** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
+**Knowledge Representation / Knowledge Graphs** <!-- .element: style="font-size:40px; margin-bottom:1.5em;" -->
+
+<ul style="font-size: 0.8em;">
+  <li class="fragment">
+  <strong>Formal Knowledge Representation</strong>: Enable computational interpretations of concepts and relationships and perform automated reasoning over data.
+  </li>
+  
+  <li class="fragment">
+  <strong>Facts and Rules</strong> allow inference mechanism to derive new knowledge from existing data.
+  </li>
+  
+  <br>
+
+  <li class="fragment">
+  <strong>Knowledge Graphs</strong> are one realization of formal knowledge representation, representing knowledge as a network of entities and relations.
+  </li>
+  <li class="fragment">
+  <em>Knowledge Graphs are a graph-based approach to formal knowledge representation.</em>
+  </li>
+</ul>
+
++++
+
+**RDF Knowledge Graphs** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
 
 <ul style="font-size: 0.8em;">
   <li class="fragment"><strong>RDF</strong> - Resource Description Framework</li>
@@ -65,13 +88,45 @@
 
 +++
 
-**RDF Knowledge Graphs** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
+**Ontologies** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
 
 <ul>
-  <li class="fragment"><strong>Explicit linking</strong> of entities via ontologically defined Predicates</li>
-  <li class="fragment"><strong>URIs</strong> as global identifiers; <strong>Federation</strong></li>
-  <li class="fragment">Automated <strong>Reasoning</strong> and <strong>Inferencing</strong></li>
+  <li class="fragment">
+  Ontologies define the vocabulary of a KG: <br/>
+  <ul>
+        <li>Classes (types of entities),</li>
+        <li>Properties (types of relations), and</li>
+        <li>Axioms (rules and constraints).</li>
+  </ul>
+  </li>
+  
+  <li class="fragment">
+  <em>Ontologies define what kinds of things exist in a domain and how they relate.</em>
+  </li>
+  
+  <li class="fragment">
+      OWL (Web Ontology Language) is a W3C standard for expressing formal ontologies.
+  </li>
+  
 </ul>
+
++++
+
+**Example Ontology** <!-- .element: style="font-size:50px; margin-bottom:1.5em;" -->
+
+```ttl
+@prefix ex:  <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:Person a owl:Class .
+
+ex:isRelated a owl:ObjectProperty ,
+               owl:TransitiveProperty ;
+    rdfs:domain ex:Person ;
+    rdfs:range  ex:Person .
+```
 
 +++
 
