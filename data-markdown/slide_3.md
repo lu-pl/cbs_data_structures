@@ -109,6 +109,10 @@ value   ::= string | number |
    4
 
 </code></pre>
+        
+<div class="fragment" style="margin-top:1em; font-size:0.4em; color:#888; text-align:center; transform: translateX(-1.2em);">
+  JSON Tree Visualizer: <a href="https://jsontree.vercel.app/" target="_blank">jsontree.vercel.app</a>
+</div>
 
 </div>
 </div>
